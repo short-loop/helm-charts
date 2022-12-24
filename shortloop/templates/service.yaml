@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: shortloop
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: shortloop
+    namespace: {{ .Release.Namespace }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
+    release: {{ .Release.Name }}
+  annotations:
+  {{ toYaml .annotations | indent 4 }}
+spec:
+  type: ClusterIP
+  ports:
+    - port: {{ .Values.exposePort }}
+      targetPort: 8080
+      protocol: TCP
+      name: shortloop-http
+  selector:
+    namespace: {{ .Release.Namespace }}
+    app: shortloop

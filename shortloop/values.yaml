@@ -1,0 +1,14 @@
+exposePort: 80
+image:
+  repository: shortloop/control-tower
+  tag: 0.0.3
+  pullPolicy: IfNotPresent
+resources:
+  limits:
+    cpu: 1000m
+    memory: 8024Mi
+  requests:
+    cpu: 100m
+    memory: 1024Mi
+logDir: /var/log/shortloop
+rollover: false
