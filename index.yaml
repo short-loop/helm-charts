@@ -3,6 +3,16 @@ entries:
   shortloop:
   - apiVersion: v2
     appVersion: 0.0.3
+    created: "2023-01-02T11:28:28.914011125Z"
+    description: A Helm chart installing ShortLoop in K8s
+    digest: 576c4b8703586af31875944bf6041e166cba5e291104fa4ab2299457c07a0c49
+    name: shortloop
+    type: application
+    urls:
+    - https://github.com/short-loop/helm-charts/releases/download/shortloop-0.0.4/shortloop-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: 0.0.3
     created: "2022-12-24T15:55:27.100868543Z"
     description: A Helm chart installing ShortLoop in K8s
     digest: c1ff393bc5f65c040d11f8003e95663e8fd05e825c35ad07d74e92c9042bb1cd
