@@ -12,3 +12,4 @@ resources:
     memory: 1024Mi
 logDir: /var/log/shortloop
 rollover: false
+analyticsHost: https://app.posthog.com
