@@ -1,8 +1,8 @@
 exposePort: 80
 image:
   repository: shortloop/control-tower
-  tag: 0.0.5
-  pullPolicy: IfNotPresent
+  tag: latest
+  pullPolicy: Always
 resources:
   limits:
     cpu: 1000m
