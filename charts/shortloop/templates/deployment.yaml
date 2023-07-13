@@ -68,7 +68,7 @@ spec:
           - name: ALLOWED_DOMAINS
             value: {{ .Values.allowedDomains }}
           - name: CLOUD_HOSTED
-            value: false
+            value: "false"
           - name: CLIENT_SENTRY_DSN
             value: {{ .Values.clientSentryDsn }}
 
