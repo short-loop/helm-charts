@@ -65,6 +65,13 @@ spec:
             value: {{ .Values.analyticsHost }}
           - name: ORG_NAME
             value: {{ .Values.orgName }}
+          - name: ALLOWED_DOMAINS
+            value: {{ .Values.allowedDomains }}
+          - name: CLOUD_HOSTED
+            value: false
+          - name: CLIENT_SENTRY_DSN
+            value: {{ .Values.clientSentryDsn }}
+
         ports:
           - containerPort: 8080
             protocol: TCP
