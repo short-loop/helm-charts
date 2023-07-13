@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   shortloop:
   - apiVersion: v2
+    appVersion: 0.0.10
+    created: "2023-07-13T07:13:31.097441075Z"
+    description: A Helm chart for Kubernetes
+    digest: 42a1a0f9008c54bb49d78df83bf2103f873ffa3f10fee3d31f3946f89c62bd98
+    name: shortloop
+    type: application
+    urls:
+    - https://github.com/short-loop/helm-charts/releases/download/shortloop-0.0.10/shortloop-0.0.10.tgz
+    version: 0.0.10
+  - apiVersion: v2
     appVersion: 0.0.9
     created: "2023-07-13T06:55:09.388625439Z"
     description: A Helm chart for Kubernetes
